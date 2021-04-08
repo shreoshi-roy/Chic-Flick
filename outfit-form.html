@@ -1,0 +1,363 @@
+<!doctype html>
+<html>
+ <head>
+    <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+ 	<title> Chic Flick</title>
+ 	<style type="text/css">
+ 		*{
+ 			margin:0;
+ 			padding:0;
+      font-family: 'Montserrat', sans-serif;
+ 		}
+    /* input[type=radio],
+    select {
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      color: pink;
+      font-weight: bold;
+    } */
+    .regform {
+      width: 800px;
+      background-color: rgb(255, 220, 217, 0.6);
+      margin: auto;
+      /* color: #FFFFFF; */
+      padding: 10px 0px 10px 0px;
+      text-align: center;
+      border-radius: 15px 15px 0px 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .regform select,
+    .regform option {
+      color: black;
+      cursor: pointer;
+    }
+    .regform select {
+      padding: 10px;
+      margin-top: 5px;
+    }
+    .main {
+      background-color: rgb(0, 0, 0, 0.5);
+      width: 800px;
+      margin: auto;
+    }
+    form {
+      padding: 10px;
+    }
+    .name {
+      margin-left: 25px;
+      margin-top: 30px;
+      width: 300px;
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .amount {
+      position: relative;
+      left: 200px;
+      top: -37px;
+      line-height: 40px;
+      border-radius: 6px;
+      padding: 0 22px;
+      font-size: 16px;
+    }
+    .option {
+      position: relative;
+      left: 200px;
+      top: -37px;
+      line-height: 40px;
+      width: 250px;
+      height: 40px;
+      border-radius: 6px;
+      padding: 0 22px;
+      font-size: 16px;
+      color: black;
+      outline: none;
+      overflow: hidden;
+    }
+    .option option {
+      font-size: 20px;
+    }
+    .radio {
+      font-size: 22px;
+      font-weight: bold;
+      color: white;
+    }
+    .checkbox{
+      font-size: 20px;
+      color: white;
+    }
+    .button {
+      background-color: black;
+      display: block;
+      text-align: center;
+      border-radius: 12px;
+      border: none;
+      padding: 14px 110px;
+      outline: none;
+      color: white;
+      cursor: pointer;
+      transition: 0.25px;
+      width: 50%;
+      margin: auto;
+      margin-bottom: 20px;
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .button:hover {
+      background-color: white;
+      color: black !important;
+    }
+
+    img.name {
+      height: 400px;
+      width: 400px;
+      display: block;
+      margin: auto;
+      margin-top: 15px;
+    }
+    .img-heading {
+      margin-left: 25px;
+      margin-top: 30px;
+      color: white;
+      font-size: 22px;
+      font-weight: 700;
+    }
+    .img-options {
+      text-align: center;
+      margin-right: 40px;
+    }
+    .img-options input {
+      margin-left: 40px;
+      margin-right: 5px;
+    }
+    .existing{
+      padding: 0.5rem 1.5rem;
+      margin: 1rem;
+      border: none;
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      /* border-radius: 20px; */
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      background-color: white;
+      color: black;
+      cursor: pointer;
+      font-weight: bold;
+      width: 120px;
+      text-align: center;
+      left: 270px;
+      top: -65px;
+    }
+    .existing.amount{
+      border-radius: 0;
+    }
+    .existing input[type="file"] {
+      display: none;
+    }
+    .existing-caption{
+      color: #efefef;
+      margin-left: 25px;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+ 	</style>
+ </head>
+
+ <body style="background-image: url('https://img.freepik.com/free-photo/smiling-student-woman-with-backpack-camera-going-vacation_149155-4472.jpg?size=626&ext=jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+
+  <div class= "regform">
+    <h1>WELCOME TO</h1>
+    <img src="assets/images/logo.png" height="80px" width="200px">
+     <label for="cars">Design outfit:</label>
+    <select>
+      <option value="dress">Formal</option>
+      <option value="top">Casual</option>
+      <option value="pant">Ethnic</option>
+      <option value="pant">Party</option>
+      <option value="pant">Maternity</option>
+    </select>
+    </div>
+ 	<div class="main">
+ 		<form action="" method="POST" class="col s12" >
+ 			<div id="name">
+ 				<h2 class="name">Occasion</h2>
+ 			 	<input class="amount" type="text" name="occasion"></div></br>
+      <div id="name">
+        <h2 class="name">Color Preferences</h2>
+        <input class="amount" type="text" name="color"></div></br>
+
+      <div id="name">
+        <h2 class="img-heading">Want to re-enter size?</h2>
+      <div class="img-options">
+      <input  type="radio" name = "ans1" value="yes">
+      <label class="radio">Yes</label>
+      <input  type="radio" name = "ans1" value="no" checked>
+      <label class="radio">No</label>
+      </div></div></br>
+
+
+      <div id="name">
+        <h2 class = "img-heading">What would you prefer in bottoms?</h2>
+        <div class="img-options">
+        <input type="checkbox" name = "choice" value="pants" checked>
+        <label class="checkbox">Pants</label>
+        <input type="checkbox" name = "choice" value="Trousers" checked>
+        <label class="checkbox">Trousers</label>
+        <input type="checkbox" name = "choice" value="skirt" checked>
+        <label class="checkbox">Skirt</label>
+        <input type="checkbox" name = "choice" value="long skirt">
+        <label class="checkbox">Long Skirt</label>
+        <input type="checkbox" name = "choice" value="jeans">
+        <label class="checkbox">Jeans</label>
+        <input type="checkbox" name = "choice" value="plazo" checked>
+        <label class="checkbox">Plazos</label>
+        <input type="checkbox" name = "choice" value="bell bottom">
+        <label class="checkbox">Bell Bottom</label>
+        <input type="checkbox" name = "choice" value="other">
+        <label class="checkbox">Other</label></br>
+        </div></div></br>
+
+        <div id="name">
+        <h2 class = "img-heading">What would you prefer in tops?</h2>
+        <div class="img-options">
+        <input type="checkbox" name = "choice" value="shirt" checked>
+        <label class="checkbox">Shirt</label>
+        <input type="checkbox" name = "choice" value="T-shirt">
+        <label class="checkbox">T-Shirt</label>
+        <input type="checkbox" name = "choice" value="blouse" checked>
+        <label class="checkbox">Blouse</label>
+        <input type="checkbox" name = "choice" value="crop top">
+        <label class="checkbox">Crop Top</label>
+        <input type="checkbox" name = "choice" value="Tube Top">
+        <label class="checkbox">Tube top</label>
+        <input type="checkbox" name = "choice" value="other" checked>
+        <label class="checkbox">Other</label></br>
+      </div></div>
+        </br>
+
+        <div id="name">
+        <h2 class = "img-heading">What length of dress do you prefer?</h2>
+        <div class="img-options">
+        <input type="checkbox" name = "choice" value="short" checked>
+        <label class="checkbox">Short</label>
+        <input type="checkbox" name = "choice" value="medium" checked>
+        <label class="checkbox">Medium</label>
+        <input type="checkbox" name = "choice" value="long">
+        <label class="checkbox">Long</label>
+      </div></div></br>
+
+        <div id="name">
+        <h2 class = "img-heading">Accessories</h2>
+        <div class="img-options">
+        <input type="checkbox" name = "choice" value="Watch" checked>
+        <label class="checkbox">Watch</label>
+        <input type="checkbox" name = "choice" value="earring" checked>
+        <label class="checkbox">Earring</label>
+        <input type="checkbox" name = "choice" value="Handbag" checked>
+        <label class="checkbox">HandBag</label>
+        <input type="checkbox" name = "choice" value="sunglasses" checked>
+        <label class="checkbox">SunGlasses</label>
+        <input type="checkbox" name = "choice" value="necklace">
+        <label class="checkbox">NeckPiece</label>
+        <input type="checkbox" name = "choice" value="anklet">
+        <label class="checkbox">Anklet</label>
+        <input type="checkbox" name = "choice" value="hair accessories">
+        <label class="checkbox">HairAccessories</label>
+        <input type="checkbox" name = "choice" value="other">
+        <label class="checkbox">Other</label></br>
+      </div></div></br>
+
+        <div id="name">
+        <h2 class = "img-heading">Footwear?</h2>
+        <div class="img-options">
+        <input type="checkbox" name = "choice" value="Wedges">
+        <label class="checkbox">Wedges</label>
+        <input type="checkbox" name = "choice" value="Pumps" checked>
+        <label class="checkbox">Pumps</label>
+        <input type="checkbox" name = "choice" value="Bellies">
+        <label class="checkbox">Bellies</label>
+        <input type="checkbox" name = "choice" value="pointed shoes">
+        <label class="checkbox">PointedShoes</label>
+        <input type="checkbox" name = "choice" value="other">
+        <label class="checkbox">Other</label></br>
+      </div></div></br>
+
+      <div id="name">
+        <h2 class = "img-heading">Let’s get to know your sense of style. Do you like this style?</h2>
+      <img class="name" src="assets/images/outfit-form/outfit-1.jpg" alt="img"/></br>
+      <div class="img-options">
+      <input  type="radio" name = "ans2" value="yes" checked>
+      <label class="radio">Yes</label>
+      <input  type="radio" name = "ans2" value="no">
+      <label class="radio">No</label>
+      <input  type="radio" name = "ans2" value="maybe">
+      <label class="radio">Maybe</label></br>
+    </div></div></br>
+
+      <div id="name">
+        <h2 class = "img-heading">Let’s get to know your sense of style. Do you like this style?</h2>
+      <img class="name" src="assets/images/outfit-form/outfit-2.jpg" alt="img"/></br>
+      <div class="img-options">
+      <input  type="radio" name = "ans3" value="yes" checked>
+      <label class="radio">Yes</label>
+      <input  type="radio" name = "ans3" value="no">
+      <label class="radio">No</label>
+      <input  type="radio" name = "ans3" value="maybe">
+      <label class="radio">Maybe</label></br>
+      </div></div> </br>
+   <div id="name">
+   <h2 class = "img-heading">Let’s get to know your sense of style. Do you like this style?</h2>
+      <img class="name" src="assets/images/outfit-form/outfit-3.jpg" alt="img"/></br>
+      <div class="img-options">
+      <input  type="radio" name = "ans4" value="yes" checked>
+      <label class="radio">Yes</label>
+      <input  type="radio" name = "ans4" value="no">
+      <label class="radio">No</label>
+      <input  type="radio" name = "ans4" value="maybe">
+      <label class="radio">Maybe</label></br>
+    </div></div></br>
+
+      <div id="name">
+       <h2 class = "img-heading">Let’s get to know your sense of style. Do you like this style?</h2>
+      <img class="name" src="assets/images/outfit-form/outfit-4.jpg" alt="img"/></br>
+      <div class="img-options">
+      <input  type="radio" name = "ans5" value="yes" checked>
+      <label class="radio">Yes</label>
+      <input  type="radio" name = "ans5" value="no">
+      <label class="radio">No</label>
+      <input  type="radio" name = "ans5" value="maybe">
+      <label class="radio">Maybe</label></br>
+      </div></div></br>
+     <div id="name">
+    <h2 class = "img-heading">Let’s get to know your sense of style. Do you like this style?</h2>
+      <img class="name" src="assets/images/outfit-form/outfit-5.jpg" alt="img"/></br>
+      <div class="img-options">
+      <input  type="radio" name = "ans6" value="yes" checked>
+      <label class="radio">Yes</label>
+      <input  type="radio" name = "ans6" value="no">
+      <label class="radio">No</label>
+      <input  type="radio" name = "ans6" value="maybe">
+      <label class="radio">Maybe</label></br>
+      </div></div></br>
+
+              <!-- <h2 class="name">Choose similar outfits</h2>
+              <p class="existing-caption">So we can understand better what you are looking for and suggest matching pieces</p>
+                <label class="existing amount">
+                  Upload image
+                  <input type="file" id="files" name="filename" multiple>
+                </label>
+                </button> -->
+      <a href="show-outfits.html" class="button">Find Outfits</a>
+
+
+ 		</form>
+ 	</div>
+
+ </body>
+</html>
